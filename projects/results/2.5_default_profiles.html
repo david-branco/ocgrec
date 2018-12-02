@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/db.css">
+	<link rel="shortcut icon" href="/img/favicon.ico">
+    <title>OCGREC - Project 2 Rankings: Tools Default Profiles per Benchmarks</title>
+  </head>
+  <body>
+    <div id="navbar" class="container-fluid">        
+    </div>
+    <br><br><br>
+
+    <div class="container-fluid">
+        <ul class="pagination pagination-sm">
+            <li class="page-item active" title="Back to the Project Page"><a class="page-link" href="/projects/project2.html#results">&laquo;</a></li>
+            <li class="page-item" title="Profiles Jointly"><a class="page-link" href="/projects/results/1.1_total_ids.html">1.1</a></li>
+            <li class="page-item" title="Tools Jointly"><a class="page-link" href="/projects/results/1.2_total_tools.html">1.2</a></li>
+            <li class="page-item" title="Tools Individually"><a class="page-link" href="/projects/results/1.3_tools.html">1.3</a></li>
+            <li class="page-item" title="Tools per Profile Name"><a class="page-link" href="/projects/results/1.4_profiles.html">1.4</a></li>
+            <li class="page-item" title="Tools Default Profiles"><a class="page-link" href="/projects/results/1.5_default_profiles.html">1.5</a></li>
+            <li class="page-item" title="Profiles per Category"><a class="page-link" href="/projects/results/1.6_categories.html">1.6</a></li>
+            <li class="page-item" title="Profiles per Benchmarks"><a class="page-link" href="/projects/results/2.1_total_profiles.html">2.1</a></li>
+            <li class="page-item" title="Profiles per Benchmark"><a class="page-link" href="/projects/results/2.2_profiles.html">2.2</a></li>
+            <li class="page-item" title="Tools per Benchmarks"><a class="page-link" href="/projects/results/2.3_total_tools.html">2.3</a></li>
+            <li class="page-item" title="Tools per Benchmark"><a class="page-link" href="/projects/results/2.4._tools.html">2.4</a></li>
+            <li class="page-item active" title="Tools Default Profiles per Benchmarks"><a class="page-link" href="/projects/results/2.5_default_profiles.html">2.5</a></li>
+        </ul>
+    </div>
+
+    <div class="container-fluid" style="padding-bottom: 10px;">   
+        <h3 class="font-weight-bold">Tools Default Profiles per Benchmarks</h3>
+	    <div class="container-fluid text-justify">
+	    	Rankings from the results of the 18 software development tools according to their default compilation profile considering all the 12 benchmarks jointly. For each case are indicated the classifications according to the execution time in seconds, CPU and memory RAM energy consumption (individually and together) in Joules and to the ratio between both of these factors (energy consumption/time) in Joules/seconds. The classifications represent the rankings of the mean values obtained from set of program executions, after being compiled with the respective tool default profile. Each element has in addition to its overall classification for a particular measure, the sum of the various classifications that it obtained individually for the various cases. For example, if a tool has the best default profile for a given strand, then in this instance it will have the rank 1 and also the respective sum (12). For each classification were created four versions that differ in the number of decimal places considered (0, 1, 2 or 3). In the auxiliary files <a href="/repository/proj2auxinfo.pdf" target="_blank">Proj2AuxInfo</a> and <a href="/repository/proj2auxresults.pdf" target="_blank">Proj2AuxResults</a> are provided some more results as well as described other relevant information, namely to which options are contained in each compilation profile.
+	    </div>
+	</div>
+
+    <ul>
+    	<li>
+    	  <span><strong><a href="#tools">Software Development Tools</a></strong>:</span> 			  
+		  <span style="padding:8px;" class="small"><a href="/repository/results/2.5_default_profiles/defaultprofiles.pdf" target="_blank">PDF</a></span>
+		</li>
+    </ul>
+
+    <div id="tools" class="container-fluid">
+        <div class="container" style="padding:70px 0px">
+            <h2 style ='text-align: center' class="font-weight-bold">All Benchmarks</h2>
+            <h5 style='text-align: center'>Software Development Tools default profiles ranked with 0 decimal points</h5>
+            <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+                <thead class="thead-light">
+                    <th scope="col">Tool Name</th>
+                    <th scope="col">Execution Time (s)</th>
+                    <th scope="col">Total Energy (J)</th>
+                    <th scope="col">CPU Energy (J)</th>
+                    <th scope="col">Memory Energy (J)</th>
+                    <th scope="col">Energy/Time (J/s)</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CMake</td>
+                        <td>3 <small>(24.0)</small></td>
+                        <td>10 <small>(47.0)</small></td>
+                        <td>11 <small>(45.0)</small></td>
+                        <td>3 <small>(22.0)</small></td>
+                        <td>5 <small>(19.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>qmake</td>
+                        <td>3 <small>(24.0)</small></td>
+                        <td>2 <small>(36.0)</small></td>
+                        <td>2 <small>(35.0)</small></td>
+                        <td>5 <small>(23.0)</small></td>
+                        <td>2 <small>(17.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Qbs</td>
+                        <td>5 <small>(25.0)</small></td>
+                        <td>3 <small>(38.0)</small></td>
+                        <td>3 <small>(38.0)</small></td>
+                        <td>5 <small>(23.0)</small></td>
+                        <td>3 <small>(18.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>NetBeans IDE</td>
+                        <td>3 <small>(24.0)</small></td>
+                        <td>10 <small>(47.0)</small></td>
+                        <td>11 <small>(45.0)</small></td>
+                        <td>3 <small>(22.0)</small></td>
+                        <td>5 <small>(19.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Code::Blocks</td>
+                        <td>3 <small>(24.0)</small></td>
+                        <td>7 <small>(44.0)</small></td>
+                        <td>8 <small>(43.0)</small></td>
+                        <td>5 <small>(23.0)</small></td>
+                        <td>5 <small>(19.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>CLion</td>
+                        <td>3 <small>(24.0)</small></td>
+                        <td>10 <small>(47.0)</small></td>
+                        <td>11 <small>(45.0)</small></td>
+                        <td>3 <small>(22.0)</small></td>
+                        <td>5 <small>(19.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>CodeLite</td>
+                        <td>3 <small>(24.0)</small></td>
+                        <td>5 <small>(42.0)</small></td>
+                        <td>6 <small>(41.0)</small></td>
+                        <td>3 <small>(22.0)</small></td>
+                        <td>3 <small>(18.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Eclipse CDT</td>
+                        <td>5 <small>(25.0)</small></td>
+                        <td>5 <small>(42.0)</small></td>
+                        <td>7 <small>(42.0)</small></td>
+                        <td>3 <small>(22.0)</small></td>
+                        <td>3 <small>(18.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>KDevelop</td>
+                        <td>3 <small>(24.0)</small></td>
+                        <td>10 <small>(47.0)</small></td>
+                        <td>11 <small>(45.0)</small></td>
+                        <td>3 <small>(22.0)</small></td>
+                        <td>5 <small>(19.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Geany</td>
+                        <td>5 <small>(25.0)</small></td>
+                        <td>8 <small>(45.0)</small></td>
+                        <td>12 <small>(46.0)</small></td>
+                        <td>3 <small>(22.0)</small></td>
+                        <td>5 <small>(19.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Anjuta DevStudio</td>
+                        <td>3 <small>(24.0)</small></td>
+                        <td>7 <small>(44.0)</small></td>
+                        <td>8 <small>(43.0)</small></td>
+                        <td>5 <small>(23.0)</small></td>
+                        <td>5 <small>(19.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Qt Creator</td>
+                        <td>3 <small>(24.0)</small></td>
+                        <td>2 <small>(36.0)</small></td>
+                        <td>2 <small>(35.0)</small></td>
+                        <td>5 <small>(23.0)</small></td>
+                        <td>2 <small>(17.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>DialogBlocks</td>
+                        <td>3 <small>(24.0)</small></td>
+                        <td>7 <small>(44.0)</small></td>
+                        <td>9 <small>(44.0)</small></td>
+                        <td>3 <small>(22.0)</small></td>
+                        <td>2 <small>(17.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>ZinjaI</td>
+                        <td>2 <small>(23.0)</small></td>
+                        <td>6 <small>(43.0)</small></td>
+                        <td>5 <small>(40.0)</small></td>
+                        <td>2 <small>(21.0)</small></td>
+                        <td>3 <small>(18.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>GPS</td>
+                        <td>3 <small>(24.0)</small></td>
+                        <td>7 <small>(44.0)</small></td>
+                        <td>8 <small>(43.0)</small></td>
+                        <td>5 <small>(23.0)</small></td>
+                        <td>5 <small>(19.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Oracle Developer Studio</td>
+                        <td>3 <small>(24.0)</small></td>
+                        <td>10 <small>(47.0)</small></td>
+                        <td>11 <small>(45.0)</small></td>
+                        <td>3 <small>(22.0)</small></td>
+                        <td>5 <small>(19.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Sphere Engine</td>
+                        <td>1 <small>(15.0)</small></td>
+                        <td>1 <small>(14.0)</small></td>
+                        <td>1 <small>(14.0)</small></td>
+                        <td>1 <small>(12.0)</small></td>
+                        <td>1 <small>(16.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>AWS Cloud9</td>
+                        <td>2 <small>(23.0)</small></td>
+                        <td>9 <small>(45.5)</small></td>
+                        <td>10 <small>(44.5)</small></td>
+                        <td>3 <small>(22.0)</small></td>
+                        <td>4 <small>(18.5)</small></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container" style="padding:70px 0px">
+            <h2 style ='text-align: center' class="font-weight-bold">All Benchmarks</h2>
+            <h5 style='text-align: center'>Software Development Tools default profiles ranked with 1 decimal points</h5>
+            <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+                <thead class="thead-light">
+                    <th scope="col">Tool Name</th>
+                    <th scope="col">Execution Time (s)</th>
+                    <th scope="col">Total Energy (J)</th>
+                    <th scope="col">CPU Energy (J)</th>
+                    <th scope="col">Memory Energy (J)</th>
+                    <th scope="col">Energy/Time (J/s)</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CMake</td>
+                        <td>6 <small>(35.0)</small></td>
+                        <td>10 <small>(75.0)</small></td>
+                        <td>10 <small>(72.0)</small></td>
+                        <td>8 <small>(35.0)</small></td>
+                        <td>8 <small>(36.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>qmake</td>
+                        <td>6 <small>(35.0)</small></td>
+                        <td>2 <small>(54.0)</small></td>
+                        <td>2 <small>(52.0)</small></td>
+                        <td>7 <small>(34.0)</small></td>
+                        <td>2 <small>(29.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Qbs</td>
+                        <td>8 <small>(37.0)</small></td>
+                        <td>3 <small>(60.0)</small></td>
+                        <td>3 <small>(56.0)</small></td>
+                        <td>10 <small>(37.0)</small></td>
+                        <td>3 <small>(30.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>NetBeans IDE</td>
+                        <td>6 <small>(35.0)</small></td>
+                        <td>10 <small>(75.0)</small></td>
+                        <td>10 <small>(72.0)</small></td>
+                        <td>8 <small>(35.0)</small></td>
+                        <td>8 <small>(36.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Code::Blocks</td>
+                        <td>5 <small>(34.0)</small></td>
+                        <td>7 <small>(69.0)</small></td>
+                        <td>8 <small>(68.0)</small></td>
+                        <td>5 <small>(32.0)</small></td>
+                        <td>6 <small>(34.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>CLion</td>
+                        <td>6 <small>(35.0)</small></td>
+                        <td>10 <small>(75.0)</small></td>
+                        <td>10 <small>(72.0)</small></td>
+                        <td>8 <small>(35.0)</small></td>
+                        <td>8 <small>(36.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>CodeLite</td>
+                        <td>4 <small>(32.0)</small></td>
+                        <td>3 <small>(60.0)</small></td>
+                        <td>4 <small>(57.0)</small></td>
+                        <td>6 <small>(33.0)</small></td>
+                        <td>4 <small>(31.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Eclipse CDT</td>
+                        <td>3 <small>(31.0)</small></td>
+                        <td>6 <small>(67.0)</small></td>
+                        <td>7 <small>(64.0)</small></td>
+                        <td>6 <small>(33.0)</small></td>
+                        <td>7 <small>(35.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>KDevelop</td>
+                        <td>6 <small>(35.0)</small></td>
+                        <td>10 <small>(75.0)</small></td>
+                        <td>10 <small>(72.0)</small></td>
+                        <td>8 <small>(35.0)</small></td>
+                        <td>8 <small>(36.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Geany</td>
+                        <td>4 <small>(32.0)</small></td>
+                        <td>4 <small>(61.0)</small></td>
+                        <td>6 <small>(61.0)</small></td>
+                        <td>4 <small>(31.0)</small></td>
+                        <td>7 <small>(35.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Anjuta DevStudio</td>
+                        <td>5 <small>(34.0)</small></td>
+                        <td>7 <small>(69.0)</small></td>
+                        <td>8 <small>(68.0)</small></td>
+                        <td>5 <small>(32.0)</small></td>
+                        <td>6 <small>(34.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Qt Creator</td>
+                        <td>6 <small>(35.0)</small></td>
+                        <td>2 <small>(54.0)</small></td>
+                        <td>2 <small>(52.0)</small></td>
+                        <td>7 <small>(34.0)</small></td>
+                        <td>2 <small>(29.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>DialogBlocks</td>
+                        <td>4 <small>(32.0)</small></td>
+                        <td>9 <small>(72.0)</small></td>
+                        <td>9 <small>(69.0)</small></td>
+                        <td>7 <small>(34.0)</small></td>
+                        <td>6 <small>(34.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>ZinjaI</td>
+                        <td>2 <small>(29.0)</small></td>
+                        <td>3 <small>(60.0)</small></td>
+                        <td>4 <small>(57.0)</small></td>
+                        <td>3 <small>(29.0)</small></td>
+                        <td>10 <small>(39.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>GPS</td>
+                        <td>5 <small>(34.0)</small></td>
+                        <td>7 <small>(69.0)</small></td>
+                        <td>8 <small>(68.0)</small></td>
+                        <td>5 <small>(32.0)</small></td>
+                        <td>6 <small>(34.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Oracle Developer Studio</td>
+                        <td>6 <small>(35.0)</small></td>
+                        <td>10 <small>(75.0)</small></td>
+                        <td>10 <small>(72.0)</small></td>
+                        <td>8 <small>(35.0)</small></td>
+                        <td>8 <small>(36.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Sphere Engine</td>
+                        <td>1 <small>(17.0)</small></td>
+                        <td>1 <small>(21.0)</small></td>
+                        <td>1 <small>(19.0)</small></td>
+                        <td>1 <small>(19.0)</small></td>
+                        <td>1 <small>(25.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>AWS Cloud9</td>
+                        <td>3 <small>(31.0)</small></td>
+                        <td>8 <small>(70.0)</small></td>
+                        <td>9 <small>(69.0)</small></td>
+                        <td>2 <small>(28.5)</small></td>
+                        <td>9 <small>(36.5)</small></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container" style="padding:70px 0px">
+            <h2 style ='text-align: center' class="font-weight-bold">All Benchmarks</h2>
+            <h5 style='text-align: center'>Software Development Tools default profiles ranked with 2 decimal points</h5>
+            <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+                    <thead class="thead-light">
+                        <th scope="col">Tool Name</th>
+                        <th scope="col">Execution Time (s)</th>
+                        <th scope="col">Total Energy (J)</th>
+                        <th scope="col">CPU Energy (J)</th>
+                        <th scope="col">Memory Energy (J)</th>
+                        <th scope="col">Energy/Time (J/s)</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CMake</td>
+                            <td>9 <small>(59.0)</small></td>
+                            <td>10 <small>(88.0)</small></td>
+                            <td>11 <small>(83.0)</small></td>
+                            <td>8 <small>(54.0)</small></td>
+                            <td>10 <small>(70.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>qmake</td>
+                            <td>7 <small>(52.0)</small></td>
+                            <td>2 <small>(65.0)</small></td>
+                            <td>3 <small>(64.0)</small></td>
+                            <td>7 <small>(51.0)</small></td>
+                            <td>2 <small>(51.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>Qbs</td>
+                            <td>10 <small>(60.0)</small></td>
+                            <td>3 <small>(69.0)</small></td>
+                            <td>3 <small>(64.0)</small></td>
+                            <td>10 <small>(58.0)</small></td>
+                            <td>3 <small>(53.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>NetBeans IDE</td>
+                            <td>9 <small>(59.0)</small></td>
+                            <td>10 <small>(88.0)</small></td>
+                            <td>11 <small>(83.0)</small></td>
+                            <td>8 <small>(54.0)</small></td>
+                            <td>10 <small>(70.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>Code::Blocks</td>
+                            <td>7 <small>(52.0)</small></td>
+                            <td>7 <small>(78.0)</small></td>
+                            <td>10 <small>(81.0)</small></td>
+                            <td>5 <small>(48.0)</small></td>
+                            <td>9 <small>(69.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>CLion</td>
+                            <td>9 <small>(59.0)</small></td>
+                            <td>10 <small>(88.0)</small></td>
+                            <td>11 <small>(83.0)</small></td>
+                            <td>8 <small>(54.0)</small></td>
+                            <td>10 <small>(70.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>CodeLite</td>
+                            <td>4 <small>(49.0)</small></td>
+                            <td>2 <small>(65.0)</small></td>
+                            <td>4 <small>(66.0)</small></td>
+                            <td>2 <small>(45.0)</small></td>
+                            <td>4 <small>(56.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>Eclipse CDT</td>
+                            <td>5 <small>(50.0)</small></td>
+                            <td>6 <small>(75.0)</small></td>
+                            <td>7 <small>(75.0)</small></td>
+                            <td>3 <small>(46.0)</small></td>
+                            <td>8 <small>(63.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>KDevelop</td>
+                            <td>9 <small>(59.0)</small></td>
+                            <td>10 <small>(88.0)</small></td>
+                            <td>11 <small>(83.0)</small></td>
+                            <td>8 <small>(54.0)</small></td>
+                            <td>10 <small>(70.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>Geany</td>
+                            <td>7 <small>(52.0)</small></td>
+                            <td>4 <small>(71.0)</small></td>
+                            <td>5 <small>(70.0)</small></td>
+                            <td>4 <small>(47.0)</small></td>
+                            <td>7 <small>(62.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>Anjuta DevStudio</td>
+                            <td>7 <small>(52.0)</small></td>
+                            <td>7 <small>(78.0)</small></td>
+                            <td>10 <small>(81.0)</small></td>
+                            <td>5 <small>(48.0)</small></td>
+                            <td>9 <small>(69.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>Qt Creator</td>
+                            <td>7 <small>(52.0)</small></td>
+                            <td>2 <small>(65.0)</small></td>
+                            <td>3 <small>(64.0)</small></td>
+                            <td>7 <small>(51.0)</small></td>
+                            <td>2 <small>(51.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>DialogBlocks</td>
+                            <td>6 <small>(51.0)</small></td>
+                            <td>9 <small>(79.0)</small></td>
+                            <td>9 <small>(80.0)</small></td>
+                            <td>6 <small>(50.0)</small></td>
+                            <td>11 <small>(71.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>ZinjaI</td>
+                            <td>2 <small>(46.0)</small></td>
+                            <td>2 <small>(65.0)</small></td>
+                            <td>2 <small>(63.0)</small></td>
+                            <td>3 <small>(46.0)</small></td>
+                            <td>6 <small>(61.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>GPS</td>
+                            <td>7 <small>(52.0)</small></td>
+                            <td>7 <small>(78.0)</small></td>
+                            <td>10 <small>(81.0)</small></td>
+                            <td>5 <small>(48.0)</small></td>
+                            <td>9 <small>(69.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>Oracle Developer Studio</td>
+                            <td>9 <small>(59.0)</small></td>
+                            <td>10 <small>(88.0)</small></td>
+                            <td>11 <small>(83.0)</small></td>
+                            <td>8 <small>(54.0)</small></td>
+                            <td>10 <small>(70.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>Sphere Engine</td>
+                            <td>1 <small>(23.0)</small></td>
+                            <td>1 <small>(21.0)</small></td>
+                            <td>1 <small>(21.0)</small></td>
+                            <td>1 <small>(23.0)</small></td>
+                            <td>1 <small>(48.0)</small></td>
+                        </tr>
+                        <tr>
+                            <td>AWS Cloud9</td>
+                            <td>3 <small>(48.5)</small></td>
+                            <td>8 <small>(78.5)</small></td>
+                            <td>8 <small>(79.5)</small></td>
+                            <td>2 <small>(45.0)</small></td>
+                            <td>11 <small>(71.0)</small></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        <div class="container" style="padding:70px 0px">
+            <h2 style ='text-align: center' class="font-weight-bold">All Benchmarks</h2>
+            <h5 style='text-align: center'>Software Development Tools default profiles ranked with 3 decimal points</h5>
+            <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+                <thead class="thead-light">
+                    <th scope="col">Tool Name</th>
+                    <th scope="col">Execution Time (s)</th>
+                    <th scope="col">Total Energy (J)</th>
+                    <th scope="col">CPU Energy (J)</th>
+                    <th scope="col">Memory Energy (J)</th>
+                    <th scope="col">Energy/Time (J/s)</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CMake</td>
+                        <td>10 <small>(74.0)</small></td>
+                        <td>10 <small>(91.0)</small></td>
+                        <td>10 <small>(88.0)</small></td>
+                        <td>7 <small>(69.0)</small></td>
+                        <td>8 <small>(80.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>qmake</td>
+                        <td>5 <small>(67.0)</small></td>
+                        <td>4 <small>(69.0)</small></td>
+                        <td>3 <small>(70.0)</small></td>
+                        <td>4 <small>(66.0)</small></td>
+                        <td>1 <small>(55.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Qbs</td>
+                        <td>7 <small>(70.0)</small></td>
+                        <td>5 <small>(74.0)</small></td>
+                        <td>3 <small>(70.0)</small></td>
+                        <td>8 <small>(70.0)</small></td>
+                        <td>2 <small>(57.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>NetBeans IDE</td>
+                        <td>10 <small>(74.0)</small></td>
+                        <td>10 <small>(91.0)</small></td>
+                        <td>10 <small>(88.0)</small></td>
+                        <td>7 <small>(69.0)</small></td>
+                        <td>8 <small>(80.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Code::Blocks</td>
+                        <td>6 <small>(69.0)</small></td>
+                        <td>9 <small>(82.0)</small></td>
+                        <td>9 <small>(87.0)</small></td>
+                        <td>4 <small>(66.0)</small></td>
+                        <td>7 <small>(78.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>CLion</td>
+                        <td>10 <small>(74.0)</small></td>
+                        <td>10 <small>(91.0)</small></td>
+                        <td>10 <small>(88.0)</small></td>
+                        <td>7 <small>(69.0)</small></td>
+                        <td>8 <small>(80.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>CodeLite</td>
+                        <td>2 <small>(62.0)</small></td>
+                        <td>2 <small>(65.0)</small></td>
+                        <td>2 <small>(67.0)</small></td>
+                        <td>2 <small>(63.0)</small></td>
+                        <td>3 <small>(64.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Eclipse CDT</td>
+                        <td>7 <small>(70.0)</small></td>
+                        <td>7 <small>(78.0)</small></td>
+                        <td>6 <small>(79.0)</small></td>
+                        <td>5 <small>(67.0)</small></td>
+                        <td>6 <small>(73.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>KDevelop</td>
+                        <td>10 <small>(74.0)</small></td>
+                        <td>10 <small>(91.0)</small></td>
+                        <td>10 <small>(88.0)</small></td>
+                        <td>7 <small>(69.0)</small></td>
+                        <td>8 <small>(80.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Geany</td>
+                        <td>9 <small>(72.0)</small></td>
+                        <td>6 <small>(75.0)</small></td>
+                        <td>4 <small>(75.0)</small></td>
+                        <td>3 <small>(64.0)</small></td>
+                        <td>5 <small>(71.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Anjuta DevStudio</td>
+                        <td>6 <small>(69.0)</small></td>
+                        <td>9 <small>(82.0)</small></td>
+                        <td>9 <small>(87.0)</small></td>
+                        <td>4 <small>(66.0)</small></td>
+                        <td>7 <small>(78.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Qt Creator</td>
+                        <td>5 <small>(67.0)</small></td>
+                        <td>4 <small>(69.0)</small></td>
+                        <td>3 <small>(70.0)</small></td>
+                        <td>4 <small>(66.0)</small></td>
+                        <td>1 <small>(55.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>DialogBlocks</td>
+                        <td>4 <small>(66.0)</small></td>
+                        <td>8 <small>(81.0)</small></td>
+                        <td>7 <small>(82.0)</small></td>
+                        <td>4 <small>(66.0)</small></td>
+                        <td>8 <small>(80.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>ZinjaI</td>
+                        <td>2 <small>(62.0)</small></td>
+                        <td>3 <small>(68.0)</small></td>
+                        <td>2 <small>(67.0)</small></td>
+                        <td>5 <small>(67.0)</small></td>
+                        <td>4 <small>(70.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>GPS</td>
+                        <td>6 <small>(69.0)</small></td>
+                        <td>9 <small>(82.0)</small></td>
+                        <td>9 <small>(87.0)</small></td>
+                        <td>4 <small>(66.0)</small></td>
+                        <td>7 <small>(78.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Oracle Developer Studio</td>
+                        <td>10 <small>(74.0)</small></td>
+                        <td>10 <small>(91.0)</small></td>
+                        <td>10 <small>(88.0)</small></td>
+                        <td>7 <small>(69.0)</small></td>
+                        <td>8 <small>(80.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Sphere Engine</td>
+                        <td>1 <small>(24.0)</small></td>
+                        <td>1 <small>(21.0)</small></td>
+                        <td>1 <small>(21.0)</small></td>
+                        <td>1 <small>(24.0)</small></td>
+                        <td>1 <small>(55.0)</small></td>
+                    </tr>
+                    <tr>
+                        <td>AWS Cloud9</td>
+                        <td>3 <small>(63.5)</small></td>
+                        <td>8 <small>(81.0)</small></td>
+                        <td>8 <small>(83.5)</small></td>
+                        <td>2 <small>(63.0)</small></td>
+                        <td>9 <small>(83.0)</small></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>  	
+    </div>
+
+	<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="fa fa-chevron-up"></span></a>
+
+    <div id="footer">
+    </div>
+    
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/db.js"></script>
+    <script src="/js/bootstrap.js"></script>
+  </body>
+</html>

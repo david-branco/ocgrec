@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="/css/bootstrap.css">
+	    <link rel="stylesheet" href="/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="/css/db.css">
+	    <link rel="shortcut icon" href="/img/favicon.ico">
+		<title>OCGREC - Project 1</title>
+	</head>
+	<body>
+		<div id="navbar" class="container-fluid">      
+		</div>
+
+		<div class="bg-primary jumbotron">
+			<h1 class="font-weight-bold font-italic">Impact of GCC optimization levels in energy consumption during program execution</h1>
+		</div>
+
+		<div class="container-fluid">
+			<h4 class="font-weight-bold">Brief Context</h4>
+			<div class="container-fluid text-justify">
+				Experimental study that addresses the impact that running optimized compiled code has in execution time and in the CPU, RAM and GPU energy consumption. In particular, the study is focused on programs compiled with optimization suits in order to understand the relationship between a program's energy consumption and its optimization level. Namely, 12 programs in 4 programming languages (C, C++, Objective-C and GO) and 6 GCC optimization levels (O0, O1, O2, O3, Ofast and Os) are analyzed.	
+			</div>
+		</div>
+		<br>
+
+		<div class="container-fluid">
+			<h4 class="font-weight-bold">Testing Platform</h4>
+			<div class="container-fluid">				    
+				The study was accomplished on a laptop Asus N56JN-DM127H, running under Linux:<br> 
+				<ul style="list-style-type:square">
+					<li>Intel&reg Core i7-4710HQ up to 3.5 GHz, Haswell Family</li>
+					<li>8 GB DDR3L 1600MHz</li>
+					<li>NVIDIA&reg GeForce&reg GT 840M, 2GB DDR3 VRAM</li>
+					<li>Arch Linux 64-bit (Linux Kernel 4.4.5-1)</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<h4 class="font-weight-bold">Compiler</h4>
+			<div class="container-fluid">
+				<a href="https://www.gnu.org/software/gcc/" target="_blank">GCC - the GNU Compiler Collection</a> <small>(v. 5.3.0)</small>	
+			</div>
+		</div>
+		<br>
+
+		<div class="container-fluid">	
+			<h4 class="font-weight-bold">Benchmarks</h4>
+			<div class="container-fluid text-justify">
+				Set of 12 software solutions in 4 different programming languages (C, C ++, Go and Objective-C) that are compatible with GCC. They are characterized by having different format, complexity, background and scope of application.
+				<ul>
+					<li>MMC<a href="https://raw.githubusercontent.com/david-branco/gcc-optimization-energy-article-extended/master/source_files/mmc/mmc.c" target="_blank"> <small>[source code]</small></a></li>
+					<li>Grades<a href="https://raw.githubusercontent.com/david-branco/gcc-optimization-energy-article-extended/master/source_files/grades/grades.y" target="_blank"> <small>[main source code]</small></a></li>
+					<li>Bzip<a href="https://raw.githubusercontent.com/david-branco/gcc-optimization-energy-article-extended/master/source_files/bzip/bzip.c" target="_blank"> <small>[source code]</small></a></li>
+					<li>Bzip2<a href="https://raw.githubusercontent.com/david-branco/gcc-optimization-energy-article-extended/master/source_files/bzip2/bzip2.c" target="_blank"> <small>[main source code]</small></a></li>
+					<li>Oggenc<a href="https://raw.githubusercontent.com/david-branco/gcc-optimization-energy-article-extended/master/source_files/oggenc/oggenc.c" target="_blank"> <small>[source code]</small></a></li>
+					<li>Pbrt<a href="https://raw.githubusercontent.com/david-branco/gcc-optimization-energy-article-extended/master/source_files/pbrt/main/pbrt.cpp" target="_blank"> <small>[main source code]</small></a></li>
+					<li>Matmul<a href="https://raw.githubusercontent.com/david-branco/gcc-optimization-energy-article-extended/master/source_files/matmul/matmul.go" target="_blank"> <small>[source code]</small></a></li>
+					<li>PGo<a href="https://raw.githubusercontent.com/david-branco/gcc-optimization-energy-article-extended/master/source_files/PGo/PGo.go" target="_blank"> <small>[source code]</small></a></li>
+					<li>Sudoku<a href="https://raw.githubusercontent.com/david-branco/gcc-optimization-energy-article-extended/master/source_files/sudoku/sudoku.go" target="_blank"> <small>[source code]</small></a></li>
+					<li>Matmulobjc<a href="https://raw.githubusercontent.com/david-branco/gcc-optimization-energy-article-extended/master/source_files/matmulobjc/matmulobjc.m" target="_blank"> <small>[source code]</small></a></li>
+					<li>Miscellany<a href="https://raw.githubusercontent.com/david-branco/gcc-optimization-energy-article-extended/master/source_files/miscellany/miscellany.m" target="_blank"> <small>[source code]</small></a></li>
+					<li>Sorting<a href="https://raw.githubusercontent.com/david-branco/gcc-optimization-energy-article-extended/master/source_files/sorting/sorting.m" target="_blank"> <small>[main source code]</small></a></li>
+				<a href="/repository/proj1benchinfo.pdf" target="_blank" style="position:relative; left:-20px";><small>[More Information]</small></a>
+				<a href="/repository/project1_source_files.zip" style="position:relative; left:-15px;"><small>[Download all]</small></a>
+				</ul>
+			</div>
+		</div>
+		<br>
+			
+		<div class="container-fluid">	
+			<h4 class="font-weight-bold">Measurement Framework</h4>
+			<div class="container-fluid text-justify">
+				Multifaceted tool that allows to carry out measurements of energy and time consumption with high accuracy through software. Uses the <a href="https://01.org/blogs/2014/running-average-power-limit-%E2%80%93-rapl">RAPL</a> interface to read from Machine-Specific Registers information related with some hardware components during a period of time. In particular, it allows to obtain the CPU, RAM and GPU energy consumption for a given program during its compile and/or runtime. The measurement framework also provides a set of functionalities that help manage the measurement process and the complementary tasks.<br>				
+				<a href="/repository/rapl-read.zip" download="rapl-read.zip"><small>[Download Tool]</small></a>
+			</div>
+		</div>
+		
+		<div class="container-fluid">	
+			<br><h4 class="font-weight-bold">Outputs</h4>
+			<div class="container-fluid text-justify">
+				Information resulting from the measurement performed according to the methodology designed for the experimental study. Briefly, it consists of a set of more than 7300 files with data referring to 100 runs per program and optimization level intended. Each file presents information about various elements for the execution in question, with particular emphasis on the CPU, RAM and GPU energy consumption values.<br>
+				<a href="/repository/project2_outputs.zip"><small>[Download Outputs]</small></a>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<br><h4 class="font-weight-bold" id="results">Processed Results</h4>
+			<div class="container-fluid text-justify">
+				Processing result of the data obtained from the performed measurements according to the defined methodology. The information is presented from the point of view of several elements, namely through the perspective of the benchmarks, programming languages and optimization levels. The results illustrated are mainly focused on the execution time and the energy consumption of CPU, RAM and GPU. In total, more than 70 charts, tables and HTML pages are provided referring to information gathered.<br> 
+				<ul>
+					<li><a href="/projects/results/opt_lvl.html"><u>Results Page</u></a></li>
+					<li><a href="/repository/proj1auxresults.pdf" target="_blank"><u>Auxiliary Results</u></a></li>
+					<a href="/repository/project1_results.zip"><small>[Download Results]</small></a>			
+				</ul>
+			</div>
+		</div>
+		<br><br><br>
+
+		<div id="footer">
+		</div>
+
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/popper.min.js"></script>
+		<script src="/js/db.js"></script>
+		<script src="/js/bootstrap.js"></script>
+	</body>
+</html>

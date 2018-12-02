@@ -1,0 +1,1232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/db.css">
+	<link rel="shortcut icon" href="/img/favicon.ico">
+    <title>OCGREC - Project 2 Results: Tools Jointly</title>
+  </head>
+  <body>
+    <div id="navbar" class="container-fluid">        
+    </div>
+    <br><br><br>
+
+    <div class="container-fluid">
+        <ul class="pagination pagination-sm">
+            <li class="page-item active" title="Back to the Project Page"><a class="page-link" href="/projects/project2.html#results">&laquo;</a></li>
+            <li class="page-item" title="Profiles Jointly"><a class="page-link" href="/projects/results/1.1_total_ids.html">1.1</a></li>
+            <li class="page-item active" title="Tools Jointly"><a class="page-link" href="/projects/results/1.2_total_tools.html">1.2</a></li>
+            <li class="page-item" title="Tools Individually"><a class="page-link" href="/projects/results/1.3_tools.html">1.3</a></li>
+            <li class="page-item" title="Profiles per Name"><a class="page-link" href="/projects/results/1.4_profiles.html">1.4</a></li>
+            <li class="page-item" title="Tools Default Profiles"><a class="page-link" href="/projects/results/1.5_default_profiles.html">1.5</a></li>
+            <li class="page-item" title="Profiles per Category"><a class="page-link" href="/projects/results/1.6_categories.html">1.6</a></li>
+            <li class="page-item" title="Profiles per Benchmarks"><a class="page-link" href="/projects/results/2.1_total_profiles.html">2.1</a></li>
+            <li class="page-item" title="Profiles per Benchmark"><a class="page-link" href="/projects/results/2.2_profiles.html">2.2</a></li>
+            <li class="page-item" title="Tools per Benchmarks"><a class="page-link" href="/projects/results/2.3_total_tools.html">2.3</a></li>
+            <li class="page-item" title="Tools per Benchmark"><a class="page-link" href="/projects/results/2.4._tools.html">2.4</a></li>
+            <li class="page-item" title="Tools Default Profiles per Benchmarks"><a class="page-link" href="/projects/results/2.5_default_profiles.html">2.5</a></li>
+        </ul>
+    </div>
+
+    <div class="container-fluid" style="padding-bottom: 10px;">   
+	    <h3 class="font-weight-bold">Tools Jointly</h3>
+	    <div class="container-fluid text-justify">
+	    	Joint results of the 18 software development tools for each of the 12 benchmarks under study. They represent the mean value obtained from the set of program executions for all the compilation profiles of each tool. For each case are indicated the obtained values of the execution time (in seconds) and the respective energy consumptions of CPU and RAM (in Joules). In the auxiliary files <a href="/repository/proj2auxinfo.pdf" target="_blank">Proj2AuxInfo</a> and <a href="/repository/proj2auxresults.pdf" target="_blank">Proj2AuxResults</a> are provided some more results as well as described other relevant information, namely to which elements corresponds each of the presented IDs.
+	    </div>
+	</div>
+
+    <ul>
+    	<li>
+    	  <span><strong><a href="#binarytrees">Binary-trees</a></strong>:</span> 			  
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/binarytrees.png" target="_blank">PNG</a></span>	-
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/binarytrees.html" target="_blank">HTML</a></span>  
+		</li>
+		<li>
+    	  <span><strong><a href="#chameneosredux">Chameneos-redux</a></strong>:</span> 			  
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/chameneosredux.png" target="_blank">PNG</a></span>	-
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/chameneosredux.html" target="_blank">HTML</a></span>  
+		</li>
+		<li>
+    	  <span><strong><a href="#fannkuchredux">Fannkuch-redux</a></strong>:</span> 			  
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/fannkuchredux.png" target="_blank">PNG</a></span>	-
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/fannkuchredux.html" target="_blank">HTML</a></span>  
+		</li>
+		<li>
+    	  <span><strong><a href="#fasta">Fasta</a></strong>:</span> 			  
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/fasta.png" target="_blank">PNG</a></span>	-
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/fasta.html" target="_blank">HTML</a></span>  
+		</li>
+		<li>
+    	  <span><strong><a href="#knucleotide">K-nucleotide</a></strong>:</span> 			  
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/knucleotide.png" target="_blank">PNG</a></span>	-
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/knucleotide.html" target="_blank">HTML</a></span>  
+		</li>
+		<li>
+    	  <span><strong><a href="#mandelbrot">Mandelbrot</a></strong>:</span> 			  
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/mandelbrot.png" target="_blank">PNG</a></span>	-
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/mandelbrot.html" target="_blank">HTML</a></span>  
+		</li>
+		<li>
+    	  <span><strong><a href="#meteorcontest">Meteor</a></strong>:</span> 			  
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/meteorcontest.png" target="_blank">PNG</a></span>	-
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/meteorcontest.html" target="_blank">HTML</a></span>  
+		</li>
+		<li>
+    	  <span><strong><a href="#nbody">N-body</a></strong>:</span> 			  
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/nbody.png" target="_blank">PNG</a></span>	-
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/nbody.html" target="_blank">HTML</a></span>  
+		</li>
+		<li>
+    	  <span><strong><a href="#regexredux">Regex-redux</a></strong>:</span> 			  
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/regexredux.png" target="_blank">PNG</a></span>	-
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/regexredux.html" target="_blank">HTML</a></span>  
+		</li>
+		<li>
+    	  <span><strong><a href="#revcomp">Reverse-complement</a></strong>:</span> 			  
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/revcomp.png" target="_blank">PNG</a></span>	-
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/revcomp.html" target="_blank">HTML</a></span>  
+		</li>
+		<li>
+    	  <span><strong><a href="#spectralnorm">Spectral-norm</a></strong>:</span> 			  
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/spectralnorm.png" target="_blank">PNG</a></span>	-
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/spectralnorm.html" target="_blank">HTML</a></span>  
+		</li>
+		<li>
+    	  <span><strong><a href="#threadring">Thread-ring</a></strong>:</span> 			  
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/threadring.png" target="_blank">PNG</a></span>	-
+		  <span style="padding:8px;" class="small"><a href="/repository/results/1.2_total_tools/threadring.html" target="_blank">HTML</a></span>  
+		</li>
+    </ul>
+
+	<div class="container-fluid">
+		<div id="binarytrees" class="container-fluid" style="padding:70px 0px">
+		   <h2 style ='text-align: center' class="font-weight-bold">Binary-trees</h2>
+		   <table style="text-align:center;" class="table table-bordered table-hover">
+		      <tbody>
+		         <tr class="active">
+		            <td class="table-light"><strong>Tool ID</strong></td>
+		            <td>1</td>
+		            <td>2</td>
+		            <td>3</td>
+		            <td>4</td>
+		            <td>5</td>
+		            <td>6</td>
+		            <td>7</td>
+		            <td>8</td>
+		            <td>9</td>
+		            <td>10</td>
+		            <td>11</td>
+		            <td>12</td>
+		            <td>13</td>
+		            <td>14</td>
+		            <td>15</td>
+		            <td>16</td>
+		            <td>17</td>
+		            <td>18</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Time (s)</strong></td>
+		            <td>4.512</td>
+		            <td>4.687</td>
+		            <td>5.307</td>
+		            <td>5.309</td>
+		            <td>7.194</td>
+		            <td>4.512</td>
+		            <td>5.300</td>
+		            <td>5.281</td>
+		            <td>4.512</td>
+		            <td>7.207</td>
+		            <td>6.250</td>
+		            <td>4.747</td>
+		            <td>5.309</td>
+		            <td>5.300</td>
+		            <td>4.387</td>
+		            <td>5.309</td>
+		            <td>3.412</td>
+		            <td>7.187</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>CPU (J)</strong></td>
+		            <td>48.488</td>
+		            <td>49.743</td>
+		            <td>55.265</td>
+		            <td>55.462</td>
+		            <td>72.497</td>
+		            <td>48.488</td>
+		            <td>55.180</td>
+		            <td>55.172</td>
+		            <td>48.488</td>
+		            <td>72.532</td>
+		            <td>63.811</td>
+		            <td>50.412</td>
+		            <td>55.174</td>
+		            <td>55.157</td>
+		            <td>47.168</td>
+		            <td>55.462</td>
+		            <td>38.530</td>
+		            <td>72.332</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Memory (J)</strong></td>
+		            <td>4.068</td>
+		            <td>4.199</td>
+		            <td>4.641</td>
+		            <td>4.641</td>
+		            <td>6.003</td>
+		            <td>4.068</td>
+		            <td>4.646</td>
+		            <td>4.619</td>
+		            <td>4.068</td>
+		            <td>6.018</td>
+		            <td>5.318</td>
+		            <td>4.239</td>
+		            <td>4.641</td>
+		            <td>4.660</td>
+		            <td>3.979</td>
+		            <td>4.641</td>
+		            <td>3.269</td>
+		            <td>6.016</td>
+		         </tr>
+		      </tbody>
+		   </table>
+		   <img src="/repository/results/1.2_total_tools/binarytrees.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+		
+		<div id="chameneosredux" class="container-fluid" style="padding:70px 0px">
+		   <h2 style ='text-align: center' class="font-weight-bold">Chameneos-redux</h2>
+		   <table style="text-align:center;" class="table table-bordered table-hover">
+		      <tbody>
+		         <tr class="active">
+		            <td class="table-light"><strong>Tool ID</strong></td>
+		            <td>1</td>
+		            <td>2</td>
+		            <td>3</td>
+		            <td>4</td>
+		            <td>5</td>
+		            <td>6</td>
+		            <td>7</td>
+		            <td>8</td>
+		            <td>9</td>
+		            <td>10</td>
+		            <td>11</td>
+		            <td>12</td>
+		            <td>13</td>
+		            <td>14</td>
+		            <td>15</td>
+		            <td>16</td>
+		            <td>17</td>
+		            <td>18</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Time (s)</strong></td>
+		            <td>8.168</td>
+		            <td>8.256</td>
+		            <td>8.480</td>
+		            <td>8.439</td>
+		            <td>8.968</td>
+		            <td>8.168</td>
+		            <td>8.415</td>
+		            <td>8.428</td>
+		            <td>8.168</td>
+		            <td>8.931</td>
+		            <td>8.713</td>
+		            <td>8.267</td>
+		            <td>8.364</td>
+		            <td>8.195</td>
+		            <td>8.146</td>
+		            <td>8.439</td>
+		            <td>7.886</td>
+		            <td>8.832</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>CPU (J)</strong></td>
+		            <td>157.347</td>
+		            <td>154.572</td>
+		            <td>157.609</td>
+		            <td>160.703</td>
+		            <td>169.571</td>
+		            <td>157.347</td>
+		            <td>161.658</td>
+		            <td>162.443</td>
+		            <td>157.347</td>
+		            <td>173.939</td>
+		            <td>163.569</td>
+		            <td>156.480</td>
+		            <td>161.416</td>
+		            <td>165.969</td>
+		            <td>156.047</td>
+		            <td>160.703</td>
+		            <td>151.171</td>
+		            <td>173.545</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Memory (J)</strong></td>
+		            <td>5.479</td>
+		            <td>5.534</td>
+		            <td>5.684</td>
+		            <td>5.659</td>
+		            <td>6.080</td>
+		            <td>5.479</td>
+		            <td>5.668</td>
+		            <td>5.674</td>
+		            <td>5.479</td>
+		            <td>6.044</td>
+		            <td>5.884</td>
+		            <td>5.543</td>
+		            <td>5.652</td>
+		            <td>5.521</td>
+		            <td>5.450</td>
+		            <td>5.659</td>
+		            <td>5.237</td>
+		            <td>5.986</td>
+		         </tr>
+		      </tbody>
+		   </table>
+		   <img src="/repository/results/1.2_total_tools/chameneosredux.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+		
+		<div id="fannkuchredux" class="container-fluid" style="padding:70px 0px">
+		   <h2 style ='text-align: center' class="font-weight-bold">Fannkuch-redux</h2>
+		   <table style="text-align:center;" class="table table-bordered table-hover">
+		      <tbody>
+		         <tr class="active">
+		            <td class="table-light"><strong>Tool ID</strong></td>
+		            <td>1</td>
+		            <td>2</td>
+		            <td>3</td>
+		            <td>4</td>
+		            <td>5</td>
+		            <td>6</td>
+		            <td>7</td>
+		            <td>8</td>
+		            <td>9</td>
+		            <td>10</td>
+		            <td>11</td>
+		            <td>12</td>
+		            <td>13</td>
+		            <td>14</td>
+		            <td>15</td>
+		            <td>16</td>
+		            <td>17</td>
+		            <td>18</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Time (s)</strong></td>
+		            <td>33.991</td>
+		            <td>36.161</td>
+		            <td>41.322</td>
+		            <td>42.165</td>
+		            <td>58.459</td>
+		            <td>33.991</td>
+		            <td>42.167</td>
+		            <td>40.207</td>
+		            <td>33.991</td>
+		            <td>58.501</td>
+		            <td>50.319</td>
+		            <td>36.343</td>
+		            <td>42.154</td>
+		            <td>42.157</td>
+		            <td>33.426</td>
+		            <td>42.165</td>
+		            <td>25.859</td>
+		            <td>58.466</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>CPU (J)</strong></td>
+		            <td>344.347</td>
+		            <td>368.111</td>
+		            <td>423.482</td>
+		            <td>434.113</td>
+		            <td>616.501</td>
+		            <td>344.347</td>
+		            <td>432.395</td>
+		            <td>415.322</td>
+		            <td>344.347</td>
+		            <td>619.045</td>
+		            <td>525.022</td>
+		            <td>369.854</td>
+		            <td>432.291</td>
+		            <td>432.552</td>
+		            <td>337.260</td>
+		            <td>434.113</td>
+		            <td>248.469</td>
+		            <td>616.833</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Memory (J)</strong></td>
+		            <td>22.569</td>
+		            <td>24.010</td>
+		            <td>27.437</td>
+		            <td>27.996</td>
+		            <td>38.814</td>
+		            <td>22.569</td>
+		            <td>27.998</td>
+		            <td>26.715</td>
+		            <td>22.569</td>
+		            <td>38.842</td>
+		            <td>33.410</td>
+		            <td>24.131</td>
+		            <td>27.988</td>
+		            <td>27.991</td>
+		            <td>22.194</td>
+		            <td>27.996</td>
+		            <td>17.171</td>
+		            <td>38.818</td>
+		         </tr>
+		      </tbody>
+		   </table>
+		   <img src="/repository/results/1.2_total_tools/fannkuchredux.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+		
+		<div id="fasta" class="container-fluid" style="padding:70px 0px">
+		   <h2 style ='text-align: center' class="font-weight-bold">Fasta</h2>
+		   <table style="text-align:center;" class="table table-bordered table-hover">
+		      <tbody>
+		         <tr class="active">
+		            <td class="table-light"><strong>Tool ID</strong></td>
+		            <td>1</td>
+		            <td>2</td>
+		            <td>3</td>
+		            <td>4</td>
+		            <td>5</td>
+		            <td>6</td>
+		            <td>7</td>
+		            <td>8</td>
+		            <td>9</td>
+		            <td>10</td>
+		            <td>11</td>
+		            <td>12</td>
+		            <td>13</td>
+		            <td>14</td>
+		            <td>15</td>
+		            <td>16</td>
+		            <td>17</td>
+		            <td>18</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Time (s)</strong></td>
+		            <td>7.720</td>
+		            <td>7.770</td>
+		            <td>8.483</td>
+		            <td>8.547</td>
+		            <td>10.784</td>
+		            <td>7.720</td>
+		            <td>8.454</td>
+		            <td>8.399</td>
+		            <td>7.720</td>
+		            <td>10.663</td>
+		            <td>9.669</td>
+		            <td>7.906</td>
+		            <td>8.412</td>
+		            <td>8.622</td>
+		            <td>7.832</td>
+		            <td>8.547</td>
+		            <td>6.281</td>
+		            <td>10.759</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>CPU (J)</strong></td>
+		            <td>30.037</td>
+		            <td>29.119</td>
+		            <td>35.516</td>
+		            <td>36.527</td>
+		            <td>57.662</td>
+		            <td>30.037</td>
+		            <td>36.531</td>
+		            <td>35.496</td>
+		            <td>30.037</td>
+		            <td>57.377</td>
+		            <td>47.176</td>
+		            <td>30.949</td>
+		            <td>36.861</td>
+		            <td>37.665</td>
+		            <td>30.640</td>
+		            <td>36.527</td>
+		            <td>15.639</td>
+		            <td>57.963</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Memory (J)</strong></td>
+		            <td>5.389</td>
+		            <td>5.355</td>
+		            <td>5.800</td>
+		            <td>5.859</td>
+		            <td>7.293</td>
+		            <td>5.389</td>
+		            <td>5.803</td>
+		            <td>5.771</td>
+		            <td>5.389</td>
+		            <td>7.238</td>
+		            <td>6.570</td>
+		            <td>5.469</td>
+		            <td>5.768</td>
+		            <td>5.873</td>
+		            <td>5.446</td>
+		            <td>5.859</td>
+		            <td>4.372</td>
+		            <td>7.270</td>
+		         </tr>
+		      </tbody>
+		   </table>
+		   <img src="/repository/results/1.2_total_tools/fasta.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+		
+		<div id="knucleotide" class="container-fluid" style="padding:70px 0px">
+		   <h2 style ='text-align: center' class="font-weight-bold">K-nucleotide</h2>
+		   <table style="text-align:center;" class="table table-bordered table-hover">
+		      <tbody>
+		         <tr class="active">
+		            <td class="table-light"><strong>Tool ID</strong></td>
+		            <td>1</td>
+		            <td>2</td>
+		            <td>3</td>
+		            <td>4</td>
+		            <td>5</td>
+		            <td>6</td>
+		            <td>7</td>
+		            <td>8</td>
+		            <td>9</td>
+		            <td>10</td>
+		            <td>11</td>
+		            <td>12</td>
+		            <td>13</td>
+		            <td>14</td>
+		            <td>15</td>
+		            <td>16</td>
+		            <td>17</td>
+		            <td>18</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Time (s)</strong></td>
+		            <td>11.644</td>
+		            <td>12.469</td>
+		            <td>15.047</td>
+		            <td>14.951</td>
+		            <td>22.549</td>
+		            <td>11.644</td>
+		            <td>14.952</td>
+		            <td>14.841</td>
+		            <td>11.644</td>
+		            <td>22.510</td>
+		            <td>18.755</td>
+		            <td>12.675</td>
+		            <td>14.971</td>
+		            <td>14.945</td>
+		            <td>11.062</td>
+		            <td>14.951</td>
+		            <td>7.502</td>
+		            <td>22.514</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>CPU (J)</strong></td>
+		            <td>122.815</td>
+		            <td>129.619</td>
+		            <td>154.291</td>
+		            <td>154.938</td>
+		            <td>229.445</td>
+		            <td>122.815</td>
+		            <td>154.673</td>
+		            <td>153.420</td>
+		            <td>122.815</td>
+		            <td>226.405</td>
+		            <td>192.396</td>
+		            <td>132.078</td>
+		            <td>155.547</td>
+		            <td>154.001</td>
+		            <td>116.158</td>
+		            <td>154.938</td>
+		            <td>81.589</td>
+		            <td>229.423</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Memory (J)</strong></td>
+		            <td>8.235</td>
+		            <td>8.794</td>
+		            <td>10.502</td>
+		            <td>10.427</td>
+		            <td>15.516</td>
+		            <td>8.235</td>
+		            <td>10.415</td>
+		            <td>10.349</td>
+		            <td>8.235</td>
+		            <td>15.449</td>
+		            <td>12.963</td>
+		            <td>8.925</td>
+		            <td>10.451</td>
+		            <td>10.409</td>
+		            <td>7.847</td>
+		            <td>10.427</td>
+		            <td>5.565</td>
+		            <td>15.461</td>
+		         </tr>
+		      </tbody>
+		   </table>
+		   <img src="/repository/results/1.2_total_tools/knucleotide.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+		
+		<div id="mandelbrot" class="container-fluid" style="padding:70px 0px">
+		   <h2 style ='text-align: center' class="font-weight-bold">Mandelbrot</h2>
+		   <table style="text-align:center;" class="table table-bordered table-hover">
+		      <tbody>
+		         <tr class="active">
+		            <td class="table-light"><strong>Tool ID</strong></td>
+		            <td>1</td>
+		            <td>2</td>
+		            <td>3</td>
+		            <td>4</td>
+		            <td>5</td>
+		            <td>6</td>
+		            <td>7</td>
+		            <td>8</td>
+		            <td>9</td>
+		            <td>10</td>
+		            <td>11</td>
+		            <td>12</td>
+		            <td>13</td>
+		            <td>14</td>
+		            <td>15</td>
+		            <td>16</td>
+		            <td>17</td>
+		            <td>18</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Time (s)</strong></td>
+		            <td>11.050</td>
+		            <td>13.310</td>
+		            <td>16.667</td>
+		            <td>16.631</td>
+		            <td>26.750</td>
+		            <td>11.050</td>
+		            <td>16.630</td>
+		            <td>15.689</td>
+		            <td>11.050</td>
+		            <td>26.753</td>
+		            <td>21.692</td>
+		            <td>13.051</td>
+		            <td>16.631</td>
+		            <td>16.632</td>
+		            <td>11.117</td>
+		            <td>16.631</td>
+		            <td>6.506</td>
+		            <td>26.751</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>CPU (J)</strong></td>
+		            <td>120.860</td>
+		            <td>148.598</td>
+		            <td>187.519</td>
+		            <td>186.803</td>
+		            <td>301.377</td>
+		            <td>120.860</td>
+		            <td>186.351</td>
+		            <td>170.373</td>
+		            <td>120.860</td>
+		            <td>298.674</td>
+		            <td>244.156</td>
+		            <td>144.919</td>
+		            <td>186.844</td>
+		            <td>185.362</td>
+		            <td>121.504</td>
+		            <td>186.803</td>
+		            <td>71.544</td>
+		            <td>301.615</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Memory (J)</strong></td>
+		            <td>7.377</td>
+		            <td>8.878</td>
+		            <td>11.108</td>
+		            <td>11.084</td>
+		            <td>17.802</td>
+		            <td>7.377</td>
+		            <td>11.083</td>
+		            <td>10.458</td>
+		            <td>7.377</td>
+		            <td>17.804</td>
+		            <td>14.444</td>
+		            <td>8.707</td>
+		            <td>11.084</td>
+		            <td>11.084</td>
+		            <td>7.422</td>
+		            <td>11.084</td>
+		            <td>4.361</td>
+		            <td>17.803</td>
+		         </tr>
+		      </tbody>
+		   </table>
+		   <img src="/repository/results/1.2_total_tools/mandelbrot.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+		
+		<div id="meteorcontest" class="container-fluid" style="padding:70px 0px">
+		   <h2 style ='text-align: center' class="font-weight-bold">Meteor</h2>
+		   <table style="text-align:center;" class="table table-bordered table-hover">
+		      <tbody>
+		         <tr class="active">
+		            <td class="table-light"><strong>Tool ID</strong></td>
+		            <td>1</td>
+		            <td>2</td>
+		            <td>3</td>
+		            <td>4</td>
+		            <td>5</td>
+		            <td>6</td>
+		            <td>7</td>
+		            <td>8</td>
+		            <td>9</td>
+		            <td>10</td>
+		            <td>11</td>
+		            <td>12</td>
+		            <td>13</td>
+		            <td>14</td>
+		            <td>15</td>
+		            <td>16</td>
+		            <td>17</td>
+		            <td>18</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Time (s)</strong></td>
+		            <td>0.060</td>
+		            <td>0.065</td>
+		            <td>0.070</td>
+		            <td>0.069</td>
+		            <td>0.087</td>
+		            <td>0.060</td>
+		            <td>0.069</td>
+		            <td>0.067</td>
+		            <td>0.060</td>
+		            <td>0.087</td>
+		            <td>0.078</td>
+		            <td>0.064</td>
+		            <td>0.069</td>
+		            <td>0.069</td>
+		            <td>0.059</td>
+		            <td>0.069</td>
+		            <td>0.050</td>
+		            <td>0.087</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>CPU (J)</strong></td>
+		            <td>0.552</td>
+		            <td>0.610</td>
+		            <td>0.677</td>
+		            <td>0.647</td>
+		            <td>0.870</td>
+		            <td>0.552</td>
+		            <td>0.647</td>
+		            <td>0.624</td>
+		            <td>0.552</td>
+		            <td>0.863</td>
+		            <td>0.754</td>
+		            <td>0.599</td>
+		            <td>0.640</td>
+		            <td>0.646</td>
+		            <td>0.545</td>
+		            <td>0.647</td>
+		            <td>0.443</td>
+		            <td>0.861</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Memory (J)</strong></td>
+		            <td>0.041</td>
+		            <td>0.044</td>
+		            <td>0.049</td>
+		            <td>0.046</td>
+		            <td>0.059</td>
+		            <td>0.041</td>
+		            <td>0.046</td>
+		            <td>0.045</td>
+		            <td>0.041</td>
+		            <td>0.059</td>
+		            <td>0.053</td>
+		            <td>0.044</td>
+		            <td>0.046</td>
+		            <td>0.046</td>
+		            <td>0.040</td>
+		            <td>0.046</td>
+		            <td>0.034</td>
+		            <td>0.059</td>
+		         </tr>
+		      </tbody>
+		   </table>
+		   <img src="/repository/results/1.2_total_tools/meteorcontest.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+		
+		<div id="nbody" class="container-fluid" style="padding:70px 0px">
+		   <h2 style ='text-align: center' class="font-weight-bold">N-body</h2>
+		   <table style="text-align:center;" class="table table-bordered table-hover">
+		      <tbody>
+		         <tr class="active">
+		            <td class="table-light"><strong>Tool ID</strong></td>
+		            <td>1</td>
+		            <td>2</td>
+		            <td>3</td>
+		            <td>4</td>
+		            <td>5</td>
+		            <td>6</td>
+		            <td>7</td>
+		            <td>8</td>
+		            <td>9</td>
+		            <td>10</td>
+		            <td>11</td>
+		            <td>12</td>
+		            <td>13</td>
+		            <td>14</td>
+		            <td>15</td>
+		            <td>16</td>
+		            <td>17</td>
+		            <td>18</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Time (s)</strong></td>
+		            <td>9.932</td>
+		            <td>12.354</td>
+		            <td>15.616</td>
+		            <td>15.245</td>
+		            <td>24.742</td>
+		            <td>9.932</td>
+		            <td>15.216</td>
+		            <td>14.082</td>
+		            <td>9.932</td>
+		            <td>24.732</td>
+		            <td>19.959</td>
+		            <td>12.003</td>
+		            <td>15.221</td>
+		            <td>15.244</td>
+		            <td>9.981</td>
+		            <td>15.245</td>
+		            <td>5.740</td>
+		            <td>24.721</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>CPU (J)</strong></td>
+		            <td>112.866</td>
+		            <td>141.823</td>
+		            <td>179.094</td>
+		            <td>173.314</td>
+		            <td>281.104</td>
+		            <td>112.866</td>
+		            <td>173.302</td>
+		            <td>160.242</td>
+		            <td>112.866</td>
+		            <td>281.544</td>
+		            <td>227.391</td>
+		            <td>137.236</td>
+		            <td>173.427</td>
+		            <td>170.758</td>
+		            <td>113.882</td>
+		            <td>173.314</td>
+		            <td>67.679</td>
+		            <td>278.356</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Memory (J)</strong></td>
+		            <td>6.596</td>
+		            <td>8.204</td>
+		            <td>10.370</td>
+		            <td>10.123</td>
+		            <td>16.445</td>
+		            <td>6.596</td>
+		            <td>10.103</td>
+		            <td>9.351</td>
+		            <td>6.596</td>
+		            <td>16.421</td>
+		            <td>13.258</td>
+		            <td>7.970</td>
+		            <td>10.107</td>
+		            <td>10.123</td>
+		            <td>6.632</td>
+		            <td>10.123</td>
+		            <td>3.812</td>
+		            <td>16.422</td>
+		         </tr>
+		      </tbody>
+		   </table>
+		   <img src="/repository/results/1.2_total_tools/nbody.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+		
+		<div id="regexredux" class="container-fluid" style="padding:70px 0px">
+		   <h2 style ='text-align: center' class="font-weight-bold">Regex-redux</h2>
+		   <table style="text-align:center;" class="table table-bordered table-hover">
+		      <tbody>
+		         <tr class="active">
+		            <td class="table-light"><strong>Tool ID</strong></td>
+		            <td>1</td>
+		            <td>2</td>
+		            <td>3</td>
+		            <td>4</td>
+		            <td>5</td>
+		            <td>6</td>
+		            <td>7</td>
+		            <td>8</td>
+		            <td>9</td>
+		            <td>10</td>
+		            <td>11</td>
+		            <td>12</td>
+		            <td>13</td>
+		            <td>14</td>
+		            <td>15</td>
+		            <td>16</td>
+		            <td>17</td>
+		            <td>18</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Time (s)</strong></td>
+		            <td>13.996</td>
+		            <td>13.822</td>
+		            <td>13.849</td>
+		            <td>13.863</td>
+		            <td>13.909</td>
+		            <td>13.996</td>
+		            <td>13.846</td>
+		            <td>13.856</td>
+		            <td>13.996</td>
+		            <td>13.898</td>
+		            <td>13.881</td>
+		            <td>13.905</td>
+		            <td>13.854</td>
+		            <td>13.849</td>
+		            <td>13.827</td>
+		            <td>13.863</td>
+		            <td>13.800</td>
+		            <td>13.916</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>CPU (J)</strong></td>
+		            <td>130.159</td>
+		            <td>128.080</td>
+		            <td>129.327</td>
+		            <td>128.450</td>
+		            <td>129.469</td>
+		            <td>130.159</td>
+		            <td>129.209</td>
+		            <td>128.830</td>
+		            <td>130.159</td>
+		            <td>129.546</td>
+		            <td>128.447</td>
+		            <td>129.281</td>
+		            <td>128.573</td>
+		            <td>129.330</td>
+		            <td>128.363</td>
+		            <td>128.450</td>
+		            <td>128.757</td>
+		            <td>130.093</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Memory (J)</strong></td>
+		            <td>11.383</td>
+		            <td>11.254</td>
+		            <td>11.277</td>
+		            <td>11.282</td>
+		            <td>11.314</td>
+		            <td>11.383</td>
+		            <td>11.268</td>
+		            <td>11.277</td>
+		            <td>11.383</td>
+		            <td>11.303</td>
+		            <td>11.295</td>
+		            <td>11.316</td>
+		            <td>11.276</td>
+		            <td>11.272</td>
+		            <td>11.257</td>
+		            <td>11.282</td>
+		            <td>11.241</td>
+		            <td>11.319</td>
+		         </tr>
+		      </tbody>
+		   </table>
+		   <img src="/repository/results/1.2_total_tools/regexredux.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+		
+		<div id="revcomp" class="container-fluid" style="padding:70px 0px">
+		   <h2 style ='text-align: center' class="font-weight-bold">Reverse-complement</h2>
+		   <table style="text-align:center;" class="table table-bordered table-hover">
+		      <tbody>
+		         <tr class="active">
+		            <td class="table-light"><strong>Tool ID</strong></td>
+		            <td>1</td>
+		            <td>2</td>
+		            <td>3</td>
+		            <td>4</td>
+		            <td>5</td>
+		            <td>6</td>
+		            <td>7</td>
+		            <td>8</td>
+		            <td>9</td>
+		            <td>10</td>
+		            <td>11</td>
+		            <td>12</td>
+		            <td>13</td>
+		            <td>14</td>
+		            <td>15</td>
+		            <td>16</td>
+		            <td>17</td>
+		            <td>18</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Time (s)</strong></td>
+		            <td>12.018</td>
+		            <td>12.103</td>
+		            <td>12.164</td>
+		            <td>12.168</td>
+		            <td>12.296</td>
+		            <td>12.018</td>
+		            <td>11.267</td>
+		            <td>12.159</td>
+		            <td>12.018</td>
+		            <td>12.320</td>
+		            <td>12.186</td>
+		            <td>12.079</td>
+		            <td>12.227</td>
+		            <td>10.555</td>
+		            <td>11.881</td>
+		            <td>12.168</td>
+		            <td>11.578</td>
+		            <td>11.321</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>CPU (J)</strong></td>
+		            <td>10.503</td>
+		            <td>10.925</td>
+		            <td>12.051</td>
+		            <td>12.111</td>
+		            <td>15.718</td>
+		            <td>10.503</td>
+		            <td>12.009</td>
+		            <td>12.142</td>
+		            <td>10.503</td>
+		            <td>15.545</td>
+		            <td>13.866</td>
+		            <td>10.987</td>
+		            <td>12.088</td>
+		            <td>11.852</td>
+		            <td>10.468</td>
+		            <td>12.111</td>
+		            <td>8.471</td>
+		            <td>15.375</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Memory (J)</strong></td>
+		            <td>8.772</td>
+		            <td>8.774</td>
+		            <td>8.929</td>
+		            <td>8.931</td>
+		            <td>8.941</td>
+		            <td>8.772</td>
+		            <td>8.353</td>
+		            <td>8.758</td>
+		            <td>8.772</td>
+		            <td>8.998</td>
+		            <td>8.920</td>
+		            <td>8.808</td>
+		            <td>8.948</td>
+		            <td>7.939</td>
+		            <td>8.674</td>
+		            <td>8.931</td>
+		            <td>8.378</td>
+		            <td>8.457</td>
+		         </tr>
+		      </tbody>
+		   </table>
+		   <img src="/repository/results/1.2_total_tools/revcomp.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+		
+		<div id="spectralnorm" class="container-fluid" style="padding:70px 0px">
+		   <h2 style ='text-align: center' class="font-weight-bold">Spectral-norm</h2>
+		   <table style="text-align:center;" class="table table-bordered table-hover">
+		      <tbody>
+		         <tr class="active">
+		            <td class="table-light"><strong>Tool ID</strong></td>
+		            <td>1</td>
+		            <td>2</td>
+		            <td>3</td>
+		            <td>4</td>
+		            <td>5</td>
+		            <td>6</td>
+		            <td>7</td>
+		            <td>8</td>
+		            <td>9</td>
+		            <td>10</td>
+		            <td>11</td>
+		            <td>12</td>
+		            <td>13</td>
+		            <td>14</td>
+		            <td>15</td>
+		            <td>16</td>
+		            <td>17</td>
+		            <td>18</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Time (s)</strong></td>
+		            <td>4.389</td>
+		            <td>4.010</td>
+		            <td>4.796</td>
+		            <td>4.796</td>
+		            <td>7.153</td>
+		            <td>4.389</td>
+		            <td>4.796</td>
+		            <td>4.796</td>
+		            <td>4.389</td>
+		            <td>7.156</td>
+		            <td>5.975</td>
+		            <td>4.353</td>
+		            <td>4.796</td>
+		            <td>4.798</td>
+		            <td>3.619</td>
+		            <td>4.796</td>
+		            <td>2.440</td>
+		            <td>7.152</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>CPU (J)</strong></td>
+		            <td>42.624</td>
+		            <td>40.561</td>
+		            <td>50.590</td>
+		            <td>50.697</td>
+		            <td>80.963</td>
+		            <td>42.624</td>
+		            <td>50.157</td>
+		            <td>50.119</td>
+		            <td>42.624</td>
+		            <td>80.982</td>
+		            <td>65.947</td>
+		            <td>43.707</td>
+		            <td>50.555</td>
+		            <td>51.242</td>
+		            <td>35.533</td>
+		            <td>50.697</td>
+		            <td>20.182</td>
+		            <td>81.538</td>
+		         </tr>
+		         <tr>
+		            <td class="table-light"><strong>Memory (J)</strong></td>
+		            <td>2.915</td>
+		            <td>2.664</td>
+		            <td>3.186</td>
+		            <td>3.186</td>
+		            <td>4.751</td>
+		            <td>2.915</td>
+		            <td>3.186</td>
+		            <td>3.186</td>
+		            <td>2.915</td>
+		            <td>4.752</td>
+		            <td>3.969</td>
+		            <td>2.892</td>
+		            <td>3.186</td>
+		            <td>3.186</td>
+		            <td>2.405</td>
+		            <td>3.186</td>
+		            <td>1.621</td>
+		            <td>4.750</td>
+		         </tr>
+		      </tbody>
+		   </table>
+		   <img src="/repository/results/1.2_total_tools/spectralnorm.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+
+		<div id="threadring" class="container-fluid" style="padding:70px 0px">
+			<h2 style ='text-align: center' class="font-weight-bold">Thread-ring</h2>
+			<table style="text-align:center;" class="table table-bordered table-hover">
+			   <tbody>
+			      <tr class="active">
+			         <td class="table-light"><strong>Tool ID</strong></td>
+			         <td>1</td>
+			         <td>2</td>
+			         <td>3</td>
+			         <td>4</td>
+			         <td>5</td>
+			         <td>6</td>
+			         <td>7</td>
+			         <td>8</td>
+			         <td>9</td>
+			         <td>10</td>
+			         <td>11</td>
+			         <td>12</td>
+			         <td>13</td>
+			         <td>14</td>
+			         <td>15</td>
+			         <td>16</td>
+			         <td>17</td>
+			         <td>18</td>
+			      </tr>
+			      <tr>
+			         <td class="table-light"><strong>Time (s)</strong></td>
+			         <td>9.620</td>
+			         <td>9.516</td>
+			         <td>9.560</td>
+			         <td>9.551</td>
+			         <td>9.452</td>
+			         <td>9.620</td>
+			         <td>9.504</td>
+			         <td>9.587</td>
+			         <td>9.620</td>
+			         <td>9.485</td>
+			         <td>9.572</td>
+			         <td>9.572</td>
+			         <td>9.467</td>
+			         <td>9.576</td>
+			         <td>9.492</td>
+			         <td>9.551</td>
+			         <td>9.715</td>
+			         <td>9.509</td>
+			      </tr>
+			      <tr>
+			         <td class="table-light"><strong>CPU (J)</strong></td>
+			         <td>83.608</td>
+			         <td>82.987</td>
+			         <td>83.694</td>
+			         <td>83.491</td>
+			         <td>83.286</td>
+			         <td>83.608</td>
+			         <td>83.390</td>
+			         <td>83.762</td>
+			         <td>83.608</td>
+			         <td>82.889</td>
+			         <td>83.640</td>
+			         <td>83.420</td>
+			         <td>83.320</td>
+			         <td>82.566</td>
+			         <td>83.280</td>
+			         <td>83.491</td>
+			         <td>84.018</td>
+			         <td>82.398</td>
+			      </tr>
+			      <tr>
+			         <td class="table-light"><strong>Memory (J)</strong></td>
+			         <td>8.109</td>
+			         <td>7.988</td>
+			         <td>8.084</td>
+			         <td>8.032</td>
+			         <td>7.851</td>
+			         <td>8.109</td>
+			         <td>7.925</td>
+			         <td>8.056</td>
+			         <td>8.109</td>
+			         <td>7.953</td>
+			         <td>8.085</td>
+			         <td>8.063</td>
+			         <td>7.884</td>
+			         <td>8.104</td>
+			         <td>7.896</td>
+			         <td>8.032</td>
+			         <td>8.369</td>
+			         <td>7.947</td>
+			      </tr>
+			   </tbody>
+			</table>
+			<img src="/repository/results/1.2_total_tools/threadring.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+	</div>
+
+	<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="fa fa-chevron-up"></span></a>
+
+    <div id="footer">
+    </div>
+    
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/db.js"></script>
+    <script src="/js/bootstrap.js"></script>
+  </body>
+</html>

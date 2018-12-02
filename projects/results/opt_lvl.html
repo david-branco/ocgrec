@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/db.css">
+	<link rel="shortcut icon" href="/img/favicon.ico">
+    <title>OCGREC - Project 1: Results</title>
+  </head>
+  <body>
+    <div id="navbar" class="container-fluid">        
+    </div>
+    <br><br><br>
+
+    <div class="container-fluid" style="padding:10px 15px">   
+	    <h3 class="font-weight-bold">Brief Description</h3>
+	    <div class="container-fluid text-justify">
+	    	Result set for the 12 programs analyzed using 6 default compiler optimization levels. For each case are indicated the obtained values of the execution time (in seconds) and the respective energy consumptions of CPU, RAM and GPU (in Joules). They represent the mean value obtained from the set of each program executions, after being compiled with the respective optimization level. In the auxiliary file <a href="/repository/proj1auxinfo.pdf" target="_blank">Proj1AuxInfo</a> are provided some more results as well as described other relevant information.
+	    </div>
+	</div>
+
+    <ul>
+    	<li>
+			<span><strong><a href="#c_programs">C programs</a></strong>:</span> 
+			<ul>
+				<li>
+					<span><strong><a href="#mmc">MMC</a></strong>:</span>			  
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/mmc.png" target="_blank">PNG</a></span>	-
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/mmc.html" target="_blank">HTML</a></span>
+				</li>
+				<li>
+					<span><strong><a href="#grades">Grades</a></strong>:</span>			  
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/grades.png" target="_blank">PNG</a></span>	-
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/grades.html" target="_blank">HTML</a></span>
+				</li>
+				<li>
+					<span><strong><a href="#bzip">Bzip</a></strong>:</span>			  
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/bzip.png" target="_blank">PNG</a></span>	-
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/bzip.html" target="_blank">HTML</a></span>
+				</li>
+				<li>
+					<span><strong><a href="#bzip2">Bzip2</a></strong>:</span>			  
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/bzip2.png" target="_blank">PNG</a></span>	-
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/bzip2.html" target="_blank">HTML</a></span>
+				</li>
+				<li>
+					<span><strong><a href="#oggenc">Oggenc</a></strong>:</span>			  
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/oggenc.png" target="_blank">PNG</a></span>	-
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/oggenc.html" target="_blank">HTML</a></span>
+				</li>				
+			</ul>  
+		</li>
+
+		<li>
+	    	<span><strong><a href="#c++_program">C++ program</a></strong>:</span>			  
+			<ul>
+				<li>
+					<span><strong><a href="#pbrt">Pbrt</a></strong>:</span>			  
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/pbrt.png" target="_blank">PNG</a></span>	-
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/pbrt.html" target="_blank">HTML</a></span>
+				</li>				
+			</ul>  
+		</li>
+
+		<li>
+	    	<span><strong><a href="#go_programs">Go programs</a></strong>:</span> 			  
+			<ul>
+				<li>
+					<span><strong><a href="#matmul">Matmul</a></strong>:</span>			  
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/matmul.png" target="_blank">PNG</a></span>	-
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/matmul.html" target="_blank">HTML</a></span>
+				</li>
+				<li>
+					<span><strong><a href="#PGo">PGo</a></strong>:</span>			  
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/PGo.png" target="_blank">PNG</a></span>	-
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/PGo.html" target="_blank">HTML</a></span>
+				</li>
+				<li>
+					<span><strong><a href="#sudoku">Sudoku</a></strong>:</span>			  
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/sudoku.png" target="_blank">PNG</a></span>	-
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/sudoku.html" target="_blank">HTML</a></span>
+				</li>				
+			</ul>  
+		</li>
+
+		<li>
+	    	<span><strong><a href="#obj-c_programs">Obj-C programs</a></strong>:</span> 			  
+			<ul>
+				<li>
+					<span><strong><a href="#matmulobjc">Matmulobjc</a></strong>:</span>			  
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/matmulobjc.png" target="_blank">PNG</a></span>	-
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/matmulobjc.html" target="_blank">HTML</a></span>
+				</li>
+				<li>
+					<span><strong><a href="#miscellany">Miscellany</a></strong>:</span>			  
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/miscellany.png" target="_blank">PNG</a></span>	-
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/miscellany.html" target="_blank">HTML</a></span>
+				</li>
+				<li>
+					<span><strong><a href="#sorting">Sorting</a></strong>:</span>			  
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/sorting.png" target="_blank">PNG</a></span>	-
+					<span style="padding:8px;" class="small"><a href="/repository/results/project1/sorting.html" target="_blank">HTML</a></span>
+				</li>				
+			</ul>  
+		</li>
+    </ul>
+
+    <div class="container-fluid">
+        <ul class="pagination">
+            <li class="page-item active" title="Back to the Project Page"><a class="page-link" href="/projects/project1.html#results">&laquo;</a></li> 
+        </ul>
+    </div>
+
+	<div id="c_programs"'class="container-fluid">
+	    <div id="mmc" class="container" style="padding:70px 0px">
+	        <h2 style ='text-align: center' class="font-weight-bold">MMC</h2>
+	        <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+	            <tbody>
+	                <tr class="active">
+	                    <td><strong>Suits</strong></td>
+	                    <td>-O0</td>
+	                    <td>-O1</td>
+	                    <td>-O2</td>
+	                    <td>-O3</td>
+	                    <td>-Ofast</td>
+	                    <td>-Os</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>Time (s)</strong></td>
+	                    <td>34.361</td>
+	                    <td>24.552</td>
+	                    <td>24.402</td>
+	                    <td>23.649</td>
+	                    <td>24.265</td>
+	                    <td>25.740</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>GPU (J)</strong></td>
+	                    <td>0.038</td>
+	                    <td>0.103</td>
+	                    <td>0.012</td>
+	                    <td>0.012</td>
+	                    <td>0.012</td>
+	                    <td>0.012</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>Memory (J)</strong></td>
+	                    <td>31.646</td>
+	                    <td>24.100</td>
+	                    <td>23.856</td>
+	                    <td>23.971</td>
+	                    <td>25.422</td>
+	                    <td>25.389</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>CPU (J)</strong></td>
+	                    <td>323.288</td>
+	                    <td>213.468</td>
+	                    <td>215.743</td>
+	                    <td>216.221</td>
+	                    <td>213.023</td>
+	                    <td>202.420</td>
+	                </tr>
+	            </tbody>
+	        </table>
+	        <img src="/repository/results/project1/mmc.png" style='display: block; margin-left: auto; margin-right: auto;'>
+	    </div>
+
+	    <div id="grades" class="container" style="padding:70px 0px">
+	        <h2 style ='text-align: center' class="font-weight-bold">Grades</h2>
+	        <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+	            <tbody>
+	                <tr class="active">
+	                    <td><strong>Suits</strong></td>
+	                    <td>-O0</td>
+	                    <td>-O1</td>
+	                    <td>-O2</td>
+	                    <td>-O3</td>
+	                    <td>-Ofast</td>
+	                    <td>-Os</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>Time (s)</strong></td>
+	                    <td>40.038</td>
+	                    <td>32.378</td>
+	                    <td>31.239</td>
+	                    <td>31.226</td>
+	                    <td>31.060</td>
+	                    <td>31.091</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>GPU (J)</strong></td>
+	                    <td>0.020</td>
+	                    <td>0.015</td>
+	                    <td>0.013</td>
+	                    <td>0.013</td>
+	                    <td>0.090</td>
+	                    <td>0.106</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>Memory (J)</strong></td>
+	                    <td>30.620</td>
+	                    <td>25.108</td>
+	                    <td>24.294</td>
+	                    <td>24.301</td>
+	                    <td>24.238</td>
+	                    <td>24.216</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>CPU (J)</strong></td>
+	                    <td>321.608</td>
+	                    <td>232.804</td>
+	                    <td>222.492</td>
+	                    <td>224.657</td>
+	                    <td>221.463</td>
+	                    <td>225.448</td>
+	                </tr>
+	            </tbody>
+	        </table>
+	        <img src="/repository/results/project1/grades.png" style='display: block; margin-left: auto; margin-right: auto;'>
+	    </div>
+
+	    <div id="bzip" class="container" style="padding:70px 0px">
+	        <h2 style ='text-align: center' class="font-weight-bold">Bzip</h2>
+	        <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+	            <tbody>
+	                <tr class="active">
+	                    <td><strong>Suits</strong></td>
+	                    <td>-O0</td>
+	                    <td>-O1</td>
+	                    <td>-O2</td>
+	                    <td>-O3</td>
+	                    <td>-Ofast</td>
+	                    <td>-Os</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>Time (s)</strong></td>
+	                    <td>36.755</td>
+	                    <td>20.408</td>
+	                    <td>20.396</td>
+	                    <td>20.361</td>
+	                    <td>20.399</td>
+	                    <td>22.115</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>GPU (J)</strong></td>
+	                    <td>0.020</td>
+	                    <td>0.010</td>
+	                    <td>0.010</td>
+	                    <td>0.195</td>
+	                    <td>0.050</td>
+	                    <td>0.011</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>Memory (J)</strong></td>
+	                    <td>28.665</td>
+	                    <td>16.426</td>
+	                    <td>16.473</td>
+	                    <td>16.580</td>
+	                    <td>16.490</td>
+	                    <td>17.666</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>CPU (J)</strong></td>
+	                    <td>378.249</td>
+	                    <td>198.012</td>
+	                    <td>200.066</td>
+	                    <td>199.302</td>
+	                    <td>197.006</td>
+	                    <td>216.496</td>
+	                </tr>
+	            </tbody>
+	        </table>
+	        <img src="/repository/results/project1/bzip.png" style='display: block; margin-left: auto; margin-right: auto;'>
+	    </div>
+
+	    <div id="bzip2" class="container" style="padding:70px 0px">
+	        <h2 style ='text-align: center' class="font-weight-bold">Bzip2</h2>
+	        <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+	        <tbody>
+	            <tr class="active">
+	                <td><strong>Suits</strong></td>
+	                <td>-O0</td>
+	                <td>-O1</td>
+	                <td>-O2</td>
+	                <td>-O3</td>
+	                <td>-Ofast</td>
+	                <td>-Os</td>
+	            </tr>
+	            <tr>
+	                <td><strong>Time (s)</strong></td>
+	                <td>36.755</td>
+	                <td>20.493</td>
+	                <td>20.366</td>
+	                <td>20.477</td>
+	                <td>20.427</td>
+	                <td>21.773</td>
+	            </tr>
+	            <tr>
+	                <td><strong>GPU (J)</strong></td>
+	                <td>0.020</td>
+	                <td>0.010</td>
+	                <td>0.009</td>
+	                <td>0.010</td>
+	                <td>0.011</td>
+	                <td>0.011</td>
+	            </tr>
+	            <tr>
+	                <td><strong>Memory (J)</strong></td>
+	                <td>28.612</td>
+	                <td>16.511</td>
+	                <td>16.432</td>
+	                <td>16.523</td>
+	                <td>16.501</td>
+	                <td>17.481</td>
+	            </tr>
+	            <tr>
+	                <td><strong>CPU (J)</strong></td>
+	                <td>373.904</td>
+	                <td>195.813</td>
+	                <td>195.895</td>
+	                <td>199.116</td>
+	                <td>197.446</td>
+	                <td>211.675</td>
+	            </tr>
+	        </tbody>
+	        </table>
+	        <img src="/repository/results/project1/bzip2.png" style='display: block; margin-left: auto; margin-right: auto;'>
+	    </div>
+
+	    <div id="oggenc" class="container" style="padding:70px 0px">
+	        <h2 style ='text-align: center' class="font-weight-bold">Oggenc</h2>
+	        <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+	            <tbody>
+	                <tr class="active">
+	                    <td><strong>Suits</strong></td>
+	                    <td>-O0</td>
+	                    <td>-O1</td>
+	                    <td>-O2</td>
+	                    <td>-O3</td>
+	                    <td>-Ofast</td>
+	                    <td>-Os</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>Time (s)</strong></td>
+	                    <td>46.068</td>
+	                    <td>19.958</td>
+	                    <td>17.648</td>
+	                    <td>17.256</td>
+	                    <td>16.359</td>
+	                    <td>20.177</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>GPU (J)</strong></td>
+	                    <td>0.026</td>
+	                    <td>0.046</td>
+	                    <td>0.053</td>
+	                    <td>0.040</td>
+	                    <td>0.008</td>
+	                    <td>0.044</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>Memory (J)</strong></td>
+	                    <td>33.359</td>
+	                    <td>14.485</td>
+	                    <td>12.816</td>
+	                    <td>12.530</td>
+	                    <td>11.873</td>
+	                    <td>14.644</td>
+	                </tr>
+	                <tr>
+	                    <td><strong>CPU (J)</strong></td>
+	                    <td>490.633</td>
+	                    <td>201.779</td>
+	                    <td>183.028</td>
+	                    <td>177.942</td>
+	                    <td>168.165</td>
+	                    <td>208.866</td>
+	                </tr>
+	            </tbody>
+	        </table>
+	        <img src="/repository/results/project1/oggenc.png" style='display: block; margin-left: auto; margin-right: auto;'>
+	    </div>
+	</div>
+
+	<div id="c++_program"'class="container-fluid">
+		<div id="pbrt" class="container" style="padding:70px 0px">
+		    <h2 style ='text-align: center' class="font-weight-bold">Pbrt</h2>
+		    <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+		        <tbody>
+		            <tr class="active">
+		                <td><strong>Suits</strong></td>
+		                <td>-O0</td>
+		                <td>-O1</td>
+		                <td>-O2</td>
+		                <td>-O3</td>
+		                <td>-Ofast</td>
+		                <td>-Os</td>
+		            </tr>
+		            <tr>
+		                <td><strong>Time (s)</strong></td>
+		                <td>47.008</td>
+		                <td>12.614</td>
+		                <td>12.761</td>
+		                <td>12.413</td>
+		                <td>12.175</td>
+		                <td>19.547</td>
+		            </tr>
+		            <tr>
+		                <td><strong>GPU (J)</strong></td>
+		                <td>0.028</td>
+		                <td>0.006</td>
+		                <td>0.005</td>
+		                <td>0.096</td>
+		                <td>0.220</td>
+		                <td>0.009</td>
+		            </tr>
+		            <tr>
+		                <td><strong>Memory (J)</strong></td>
+		                <td>34.017</td>
+		                <td>9.143</td>
+		                <td>9.250</td>
+		                <td>9.010</td>
+		                <td>8.852</td>
+		                <td>14.158</td>
+		            </tr>
+		            <tr>
+		                <td><strong>CPU (J)</strong></td>
+		                <td>522.205</td>
+		                <td>132.318</td>
+		                <td>133.565</td>
+		                <td>127.830</td>
+		                <td>125.526</td>
+		                <td>195.006</td>
+		            </tr>
+		        </tbody>
+		    </table>
+		    <img src="/repository/results/project1/pbrt.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+	</div>
+
+	<div id="go_programs"'class="container-fluid">
+		<div id="matmul" class="container" style="padding:70px 0px">
+		    <h2 style ='text-align: center' class="font-weight-bold">Matmul</h2>
+		    <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+		        <tbody>
+		            <tr class="active">
+		                <td><strong>Suits</strong></td>
+		                <td>-O0</td>
+		                <td>-O1</td>
+		                <td>-O2</td>
+		                <td>-O3</td>
+		                <td>-Ofast</td>
+		                <td>-Os</td>
+		            </tr>
+		            <tr>
+		                <td><strong>Time (s)</strong></td>
+		                <td>22.247</td>
+		                <td>21.396</td>
+		                <td>8.420</td>
+		                <td>8.429</td>
+		                <td>8.434</td>
+		                <td>21.347</td>
+		            </tr>
+		            <tr>
+		                <td><strong>GPU (J)</strong></td>
+		                <td>0.155</td>
+		                <td>0.068</td>
+		                <td>0.003</td>
+		                <td>0.086</td>
+		                <td>0.007</td>
+		                <td>0.233</td>
+		            </tr>
+		            <tr>
+		                <td><strong>Memory (J)</strong></td>
+		                <td>25.746</td>
+		                <td>24.970</td>
+		                <td>13.138</td>
+		                <td>13.186</td>
+		                <td>13.146</td>
+		                <td>24.960</td>
+		            </tr>
+		            <tr>
+		                <td><strong>CPU (J)</strong></td>
+		                <td>265.029</td>
+		                <td>221.122</td>
+		                <td>92.163</td>
+		                <td>92.328</td>
+		                <td>92.395</td>
+		                <td>206.793</td>
+		            </tr>
+		        </tbody>
+		    </table>
+		    <img src="/repository/results/project1/matmul.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+		<div id="PGo" class="container" style="padding:70px 0px">
+		    <h2 style ='text-align: center' class="font-weight-bold">PGo</h2>
+		    <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+		        <tbody>
+		            <tr class="active">
+		                <td><strong>Suits</strong></td>
+		                <td>-O0</td>
+		                <td>-O1</td>
+		                <td>-O2</td>
+		                <td>-O3</td>
+		                <td>-Ofast</td>
+		                <td>-Os</td>
+		            </tr>
+		            <tr>
+		                <td><strong>Time (s)</strong></td>
+		                <td>35.803</td>
+		                <td>11.117</td>
+		                <td>5.066</td>
+		                <td>4.961</td>
+		                <td>4.853</td>
+		                <td>16.567</td>
+		            </tr>
+		            <tr>
+		                <td><strong>GPU (J)</strong></td>
+		                <td>0.142</td>
+		                <td>0.079</td>
+		                <td>0.047</td>
+		                <td>0.001</td>
+		                <td>0.002</td>
+		                <td>0.121</td>
+		            </tr>
+		            <tr>
+		                <td><strong>Memory (J)</strong></td>
+		                <td>25.972</td>
+		                <td>7.444</td>
+		                <td>3.687</td>
+		                <td>3.605</td>
+		                <td>3.525</td>
+		                <td>12.921</td>
+		            </tr>
+		            <tr>
+		                <td><strong>CPU (J)</strong></td>
+		                <td>765.769</td>
+		                <td>229.819</td>
+		                <td>108.842</td>
+		                <td>105.057</td>
+		                <td>102.818</td>
+		                <td>349.714</td>
+		            </tr>
+		        </tbody>
+		    </table>
+		    <img src="/repository/results/project1/PGo.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+		<div id="sudoku" class="container" style="padding:70px 0px">
+		    <h2 style ='text-align: center' class="font-weight-bold">Sudoku</h2>
+		    <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+		        <tbody>
+		            <tr class="active">
+		                <td><strong>Suits</strong></td>
+		                <td>-O0</td>
+		                <td>-O1</td>
+		                <td>-O2</td>
+		                <td>-O3</td>
+		                <td>-Ofast</td>
+		                <td>-Os</td>
+		            </tr>
+		            <tr>
+		                <td><strong>Time (s)</strong></td>
+		                <td>36.586</td>
+		                <td>24.557</td>
+		                <td>14.951</td>
+		                <td>13.156</td>
+		                <td>13.162</td>
+		                <td>26.169</td>
+		            </tr>
+		            <tr>
+		                <td><strong>GPU (J)</strong></td>
+		                <td>0.050</td>
+		                <td>0.013</td>
+		                <td>0.007</td>
+		                <td>0.005</td>
+		                <td>0.006</td>
+		                <td>0.013</td>
+		            </tr>
+		            <tr>
+		                <td><strong>Memory (J)</strong></td>
+		                <td>26.470</td>
+		                <td>17.766</td>
+		                <td>10.821</td>
+		                <td>9.523</td>
+		                <td>9.528</td>
+		                <td>18.932</td>
+		            </tr>
+		            <tr>
+		                <td><strong>CPU (J)</strong></td>
+		                <td>387.889</td>
+		                <td>248.024</td>
+		                <td>153.760</td>
+		                <td>135.654</td>
+		                <td>136.537</td>
+		                <td>267.821</td>
+		            </tr>
+		        </tbody>
+		    </table>
+		    <img src="/repository/results/project1/sudoku.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+	</div>
+
+	<div id="obj-c_programs"'class="container-fluid">
+		<div id="matmulobjc" class="container" style="padding:70px 0px">
+		    <h2 style ='text-align: center' class="font-weight-bold">Matmulobjc</h2>
+		    <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+		        <tbody>
+		            <tr class="active">
+		                <td><strong>Suits</strong></td>
+		                <td>-O0</td>
+		                <td>-O1</td>
+		                <td>-O2</td>
+		                <td>-O3</td>
+		                <td>-Ofast</td>
+		                <td>-Os</td>
+		            </tr>
+		            <tr>
+		                <td><strong>Time (s)</strong></td>
+		                <td>10.354</td>
+		                <td>3.885</td>
+		                <td>3.882</td>
+		                <td>2.511</td>
+		                <td>2.513</td>
+		                <td>4.085</td>
+		            </tr>
+		            <tr>
+		                <td><strong>GPU (J)</strong></td>
+		                <td>0.070</td>
+		                <td>0.001</td>
+		                <td>0.001</td>
+		                <td>0.001</td>
+		                <td>0.001</td>
+		                <td>0.001</td>
+		            </tr>
+		            <tr>
+		                <td><strong>Memory (J)</strong></td>
+		                <td>7.559</td>
+		                <td>2.858</td>
+		                <td>2.855</td>
+		                <td>1.863</td>
+		                <td>1.866</td>
+		                <td>3.002</td>
+		            </tr>
+		            <tr>
+		                <td><strong>CPU (J)</strong></td>
+		                <td>113.703</td>
+		                <td>44.674</td>
+		                <td>44.198</td>
+		                <td>28.851</td>
+		                <td>29.001</td>
+		                <td>45.662</td>
+		            </tr>
+		        </tbody>
+		    </table>
+		    <img src="/repository/results/project1/matmulobjc.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+		<div id="miscellany" class="container" style="padding:70px 0px">
+		    <h2 style ='text-align: center' class="font-weight-bold">Miscellany</h2>
+		    <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+		        <tbody>
+		            <tr class="active">
+		                <td><strong>Suits</strong></td>
+		                <td>-O0</td>
+		                <td>-O1</td>
+		                <td>-O2</td>
+		                <td>-O3</td>
+		                <td>-Ofast</td>
+		                <td>-Os</td>
+		            </tr>
+		            <tr>
+		                <td><strong>Time (s)</strong></td>
+		                <td>22.442</td>
+		                <td>13.681</td>
+		                <td>9.038</td>
+		                <td>10.447</td>
+		                <td>10.448</td>
+		                <td>13.665</td>
+		            </tr>
+		            <tr>
+		                <td><strong>GPU (J)</strong></td>
+		                <td>0.011</td>
+		                <td>0.006</td>
+		                <td>0.003</td>
+		                <td>0.004</td>
+		                <td>0.004</td>
+		                <td>0.006</td>
+		            </tr>
+		            <tr>
+		                <td><strong>Memory (J)</strong></td>
+		                <td>16.461</td>
+		                <td>10.132</td>
+		                <td>6.771</td>
+		                <td>7.789</td>
+		                <td>7.791</td>
+		                <td>10.129</td>
+		            </tr>
+		            <tr>
+		                <td><strong>CPU (J)</strong></td>
+		                <td>232.383</td>
+		                <td>119.579</td>
+		                <td>88.778</td>
+		                <td>100.070</td>
+		                <td>99.922</td>
+		                <td>119.785</td>
+		            </tr>
+		        </tbody>
+		    </table>
+		    <img src="/repository/results/project1/miscellany.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+		<div id="sorting" class="container" style="padding:70px 0px">
+		    <h2 style ='text-align: center' class="font-weight-bold">Sorting</h2>
+		    <table style="text-align:center;" class="table table-bordered table-hover table-striped">
+		        <tbody>
+		            <tr class="active">
+		                <td><strong>Suits</strong></td>
+		                <td>-O0</td>
+		                <td>-O1</td>
+		                <td>-O2</td>
+		                <td>-O3</td>
+		                <td>-Ofast</td>
+		                <td>-Os</td>
+		            </tr>
+		            <tr>
+		                <td><strong>Time (s)</strong></td>
+		                <td>37.623</td>
+		                <td>35.692</td>
+		                <td>35.663</td>
+		                <td>35.787</td>
+		                <td>35.748</td>
+		                <td>36.031</td>
+		            </tr>
+		            <tr>
+		                <td><strong>GPU (J)</strong></td>
+		                <td>0.023</td>
+		                <td>0.027</td>
+		                <td>0.064</td>
+		                <td>0.120</td>
+		                <td>0.067</td>
+		                <td>0.023</td>
+		            </tr>
+		            <tr>
+		                <td><strong>Memory (J)</strong></td>
+		                <td>27.271</td>
+		                <td>25.851</td>
+		                <td>25.865</td>
+		                <td>26.029</td>
+		                <td>25.909</td>
+		                <td>26.125</td>
+		            </tr>
+		            <tr>
+		                <td><strong>CPU (J)</strong></td>
+		                <td>428.827</td>
+		                <td>409.844</td>
+		                <td>410.043</td>
+		                <td>413.144</td>
+		                <td>407.175</td>
+		                <td>412.867</td>
+		            </tr>
+		        </tbody>
+		    </table>
+		    <img src="/repository/results/project1/sorting.png" style='display: block; margin-left: auto; margin-right: auto;'>
+		</div>
+	</div>
+
+
+
+
+	<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="fa fa-chevron-up"></span></a>
+
+	<div id="footer">
+	</div>
+	
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/db.js"></script>
+    <script src="/js/bootstrap.js"></script>
+  </body>
+</html>
