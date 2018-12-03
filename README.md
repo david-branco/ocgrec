@@ -7,7 +7,7 @@ The online version of this repository can be found at http://www4.di.uminho.pt/~
 
 ---
 
-## OGCREC: Optimização na geração de código tendo em vista a redução energética
+## OGCREC: Otimização na geração de código com vista à redução do consumo de energia
 Projecto desenvolvido no âmbito da Tese de Mestrado em Engenharia Informática (Universidade do Minho).
 
 Este projecto consiste num repositório de informação referente ao estudo de vários elementos das Tecnologias de Informação do ponto de vista da eficiência energética. Para além de um breve contexto e apresentação da equipa do projecto, são divulgados e explicados os elementos constituintes de 2 estudos experimentais, assim como todos os resultados obtidos e processamento efectuado. A ferramenta de medição desenvolvida, benchmarks utilizados e toda a informação resultante do projecto encontra-se disponibilizada para download juntamente com toda a documentação publicada.
