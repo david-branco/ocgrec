@@ -5,7 +5,7 @@ This project consists of a repository of information regarding the study of seve
 
 The online version of this repository can be found at http://www4.di.uminho.pt/~gepl/OCGREC/.
 
-Related repositories:
+Related projects:
 - [Impact of compilation by IDEs in energy consumption during program execution](https://github.com/david-branco/programmingtoolsenergyconsumption);
 - [Impact of GCC optimization levels in energy usage during program execution](https://github.com/david-branco/gcc-optimization-energy-article-extended);
 - [Impact of GCC optimization levels in energy usage during C/C++ program execution](https://github.com/david-branco/gcc-optimization-energy-article).
@@ -19,7 +19,7 @@ Este projecto consiste num repositório de informação referente ao estudo de v
 
 A versão online deste repositório pode ser consultada em http://www4.di.uminho.pt/~gepl/OCGREC/.
 
-Repositórios relacionados: 
+Projectos relacionados: 
 - [Impacto da compilação através de IDEs no consumo energético de programas aquando a sua execução](https://github.com/david-branco/programmingtoolsenergyconsumption);
 - [Impacto dos níveis de optimização do GCC na energia utilizada pelos programas aquando a sua execução](https://github.com/david-branco/gcc-optimization-energy-article-extended);
 - [Impacto dos níveis de optimização do GCC na energia utilizada por programas C/C++ aquando a sua execução](https://github.com/david-branco/gcc-optimization-energy-article).
